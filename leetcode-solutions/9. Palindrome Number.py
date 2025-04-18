@@ -1,5 +1,6 @@
 # 9. Palindrome Number
 # Given an integer x, return true if x is a palindrome, and false otherwise.
+# Link: https://leetcode.com/problems/palindrome-number/description/
 
 class Solution:
     def isPalindrome(self, x: int) -> bool:
