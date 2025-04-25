@@ -6,7 +6,7 @@ SELECT e.name AS Employee
 FROM Employee e -- Alias 'e' represents the emplyee record
 JOIN Employee m -- Alias 'm' represents the manager record(self join)
     ON e.managerId = m.id -- Link each employee to their manager by matching IDs
-WHERE e.salary > m.salary -- only include employees whose salary exceed their manager's
+WHERE e.salary > m.salary; -- only include employees whose salary exceed their manager's
 
 /*
 1. What is a Self-Join?

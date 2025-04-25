@@ -17,4 +17,4 @@ link: https://leetcode.com/problems/recyclable-and-low-fat-products/?envType=stu
 */
 SELECT product_id
 FROM Products
-WHERE low_fats = 'Y' AND recyclable = 'Y' -- This filters the rows, returning only those that are both low fat and recyclable
+WHERE low_fats = 'Y' AND recyclable = 'Y'; -- This filters the rows, returning only those that are both low fat and recyclable

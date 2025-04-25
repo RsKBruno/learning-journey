@@ -11,7 +11,7 @@ SELECT
     a.state
 FROM Person AS p
 LEFT JOIN Address AS a
-    ON p.personId = a.personId
+    ON p.personId = a.personId;
 
 /*
 Use LEFT JOIN to keep all records from the table Person and include matching records from the table Address. If a match doesn't exist, the fields of the table Address will be NULL
