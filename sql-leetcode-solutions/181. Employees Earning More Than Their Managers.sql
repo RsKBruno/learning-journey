@@ -1,4 +1,14 @@
 /* 181. Employees Earning More Than Their Managers
+Employee table:
+
+| id | name  | salary | managerId |
+| -- | ----- | ------ | --------- |
+| 1  | Joe   | 70000  | 3         |
+| 2  | Henry | 80000  | 4         |
+| 3  | Sam   | 60000  | null      |
+| 4  | Max   | 90000  | null      |
+
+Write a solution to find the employees who earn more than their managers.
 
 link: https://leetcode.com/problems/employees-earning-more-than-their-managers/description/
 */
