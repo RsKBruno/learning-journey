@@ -13,14 +13,16 @@ Weather =
 link: https://leetcode.com/problems/rising-temperature/description/
 */
 
-SELECT w1.id
-FROM Weather AS w1
-
+SELECT 
+    w1.id
+FROM 
+    Weather AS w1
 -- Join the Weather table with itself
-INNER JOIN Weather AS w2 
--- DATEDIFF() = 1 means w1 is exactly one day after w2
--- It ensures we only compare consecutive dates(e.g., jan 2 vs jan 1)
-ON DATEDIFF(w1.recordDate, w2.recordDate) = 1
-
+INNER JOIN 
+    -- DATEDIFF() = 1 means w1 is exactly one day after w2
+    -- It ensures we only compare consecutive dates(e.g., jan 2 vs jan 1)
+    Weather AS w2 ON DATEDIFF(w1.recordDate, w2.recordDate) = 1
+    
 -- Filter to find days where temperature rose compared to previous day
-WHERE w1.temperature  > w2.temperature;
+WHERE 
+    w1.temperature  > w2.temperature;

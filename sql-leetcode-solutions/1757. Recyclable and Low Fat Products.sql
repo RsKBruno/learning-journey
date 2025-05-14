@@ -15,6 +15,9 @@ Return the result table in any order.
 
 link: https://leetcode.com/problems/recyclable-and-low-fat-products/?envType=study-plan-v2&envId=top-sql-50
 */
-SELECT product_id
-FROM Products
-WHERE low_fats = 'Y' AND recyclable = 'Y'; -- This filters the rows, returning only those that are both low fat and recyclable
+SELECT 
+    product_id
+FROM 
+    Products
+WHERE 
+    low_fats = 'Y' AND recyclable = 'Y'; -- This filters the rows, returning only those that are both low fat and recyclable

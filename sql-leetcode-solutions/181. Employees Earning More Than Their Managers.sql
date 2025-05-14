@@ -12,11 +12,15 @@ Write a solution to find the employees who earn more than their managers.
 
 link: https://leetcode.com/problems/employees-earning-more-than-their-managers/description/
 */
-SELECT e.name AS Employee
-FROM Employee e -- Alias 'e' represents the emplyee record
-JOIN Employee m -- Alias 'm' represents the manager record(self join)
-    ON e.managerId = m.id -- Link each employee to their manager by matching IDs
-WHERE e.salary > m.salary; -- only include employees whose salary exceed their manager's
+SELECT 
+    e.name AS Employee
+FROM 
+    Employee e -- Alias 'e' represents the employee record
+JOIN 
+    -- Alias 'm' represents the manager record(self join)
+    Employee m ON e.managerId = m.id -- Link each employee to their manager by matching IDs
+WHERE 
+    e.salary > m.salary; -- only include employees whose salary exceed their manager's
 
 /*
 1. What is a Self-Join?
